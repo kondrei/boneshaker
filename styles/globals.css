@@ -2,19 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.menuHidden {
+  margin-top: -450px;
+  transition: margin 300ms ease-in-out;
 }
 
-* {
-  box-sizing: border-box;
+.menuShown {
+  margin-top: 0px;
+  transition: margin 300ms ease-in-out;
 }
