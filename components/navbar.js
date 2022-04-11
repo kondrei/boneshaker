@@ -39,7 +39,7 @@ export default function Navbar() {
   const menu = menuData.map((element) => (
     <li className="list-none" key={element.id}>
       <Link href={element.link}>
-        <a className="py-4 px-2 font-semibold hover:text-merida-green transition duration-300">
+        <a className="py-6 px-5 text-xl md:text-sm lg:text-xl hover:text-merida-green transition duration-300">
           {element.name}
         </a>
       </Link>
@@ -50,7 +50,7 @@ export default function Navbar() {
     <li className="list-none m-2" key={element.id}>
       <Link href={element.link}>
         <a
-          className="block font-semibold text-sm px-2 py-4 hover:text-merida-green transition duration-300"
+          className="block text-xl px-2 py-4 hover:text-merida-green transition duration-300"
           onClick={closeMenu}
         >
           {element.name}
@@ -60,7 +60,7 @@ export default function Navbar() {
   ));
 
   return (
-    <nav className="sticky pt-5 top-0 h-36 bg-gradient-to-b via-background-color from-background-color">
+    <nav className="z-10 pt-5 top-0">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between">
           <div className="flex space-x-7 items-end">
@@ -114,9 +114,8 @@ export default function Navbar() {
       </div>
       {/* <!-- mobile menu --> */}
       <div
-        className={`mobile-menu bg-background-color ${
-          !toggle ? "menuHidden" : "menuShown"
-        } 
+        className={`mobile-menu bg-background-color ${!toggle ? "menuHidden" : "menuShown"
+          } 
         `}
       >
         <ul className="m-4 mb-20">{mobileMenu}</ul>

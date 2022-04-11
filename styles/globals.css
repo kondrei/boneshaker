@@ -13,6 +13,10 @@
     @apply text-lg;
   }
 }
+html
+{
+  font-family: 'Inter', sans-serif;
+}
 
 .menuHidden {
   margin-top: -450px;
