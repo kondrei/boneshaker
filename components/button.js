@@ -1,12 +1,14 @@
 import Link from "next/link";
 
-export default function Button({ link, text }) {
+export default function Button({ link = "", text, handleClick }) {
   return (
     <button
-      className="flex mx-auto mt-16 text-black bg-merida-green border-0 py-2 px-8 focus:outline-none hover:bg-white rounded text-lg
-        transition-colors duration-200 text-xl"
+      className="flex text-black bg-merida-green border-0 py-2 px-2 focus:outline-none hover:bg-white hover:text-merida-green rounded text-lg
+        transition-colors duration-200 text-xl
+        lg:px-8"
+      onClick={handleClick}
     >
-      <Link href={link}>{text}</Link>
+      {link !== "" ? <Link href={link}>{text}</Link> : text}
     </button>
   );
 }
