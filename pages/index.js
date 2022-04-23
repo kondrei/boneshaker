@@ -5,9 +5,7 @@ import Button from "../components/button";
 import Slider from "../components/slider";
 
 export default function Home() {
-  const user = process.env.DB_USER;
 
-  console.log(user);
   return (
     <>
       <Head>

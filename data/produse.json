@@ -1,0 +1,29 @@
+{
+    "biciclete": [
+        {
+            "id": "1",
+            "denumire": "ONE-TWENTY RC XT-EDITION",
+            "pret": "4500,2"
+        },
+        {
+            "id": "2",
+            "denumire": "ONE-TWENTY RC 300",
+            "pret": "2300,5"
+        },
+        {
+            "id": "3",
+            "denumire": "ONE-TWENTY RC 400",
+            "pret": "8500,4"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    }
+}

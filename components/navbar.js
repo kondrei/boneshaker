@@ -114,9 +114,8 @@ export default function Navbar() {
       </div>
       {/* <!-- mobile menu --> */}
       <div
-        className={`mobile-menu bg-background-color ${
-          !toggle ? "menuHidden" : "menuShown"
-        } 
+        className={`mobile-menu bg-background-color ${!toggle ? "menuHidden" : "menuShown"
+          } 
         `}
       >
         <ul className="m-4 mb-20">{mobileMenu}</ul>
