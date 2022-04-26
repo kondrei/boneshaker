@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "json-server": "^0.17.0",
     "next": "12.1.4",
     "next-auth": "^4.3.3",
     "react": "18.0.0",
